@@ -21,3 +21,10 @@ const clothingNames = products
   .filter((product) => product.category === "clothing")
   .map((product) => product.name);
 console.log("clothing names:", clothingNames);
+
+const hasExpensiveItems = products.some((product) => product.price > 1000);
+console.log(
+  hasExpensiveItems
+    ? "there are expensive items available"
+    : "there are no expensive items available."
+);
