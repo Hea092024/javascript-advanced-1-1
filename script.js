@@ -16,3 +16,8 @@ console.log(cheapProducts);
 
 const allProductNames = products.map((product) => product.name);
 console.log("Alle produkter:", allProductNames);
+
+const clothingNames = products
+  .filter((product) => product.category === "clothing")
+  .map((product) => product.name);
+console.log("Klesprodukter:", clothingNames);
