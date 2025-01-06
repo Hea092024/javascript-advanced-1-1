@@ -7,3 +7,5 @@ const products = [
   { name: "T-shirt", price: 50, category: "clothing" },
   { name: "Sneakers", price: 300, category: "clothing" },
 ];
+
+const totalValue = products.reduce((sum,products) => sum + products, 0);
