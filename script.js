@@ -8,4 +8,5 @@ const products = [
   { name: "Sneakers", price: 300, category: "clothing" },
 ];
 
-const totalValue = products.reduce((sum,products) => sum + products, 0);
+const totalValue = products.reduce((sum,products) => sum + products.price, 0);
+console.log(`this is the value of the products`, totalValue);
