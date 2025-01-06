@@ -14,3 +14,5 @@ console.log(`this is the value of the products`, totalValue);
 const cheapProducts = products.filter((product) => product.price < 200);
 console.log(cheapProducts);
 
+const allProductNames = products.map((product) => product.name);
+console.log("Alle produkter:", allProductNames);
