@@ -12,12 +12,12 @@ const totalValue = products.reduce((sum,products) => sum + products.price, 0);
 console.log(`this is the value of the products`, totalValue);
 
 const cheapProducts = products.filter((product) => product.price < 200);
-console.log(cheapProducts);
+console.table(cheapProducts);
 
 const allProductNames = products.map((product) => product.name);
-console.log("Alle produkter:", allProductNames);
+console.log("all product names:", allProductNames);
 
 const clothingNames = products
   .filter((product) => product.category === "clothing")
   .map((product) => product.name);
-console.log("Klesprodukter:", clothingNames);
+console.log("clothing names:", clothingNames);
