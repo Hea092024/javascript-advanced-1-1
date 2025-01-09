@@ -8,6 +8,8 @@ const products = [
   { name: "Sneakers", price: 300, category: "clothing" },
 ];
 
+//Case 1
+
 const cheapProducts = products.filter((product) => product.price < 200);
 console.table(cheapProducts);
 
