@@ -10,11 +10,11 @@ const products = [
 
 //Case 1
 
-//Uses .filter to specify that I only want to see products with a value of 200 or less.
+//Uses .filter to specify that I only want to see products with a value of 200 or less
 const cheapProducts = products.filter((product) => product.price < 200);
 console.table(cheapProducts);
 
-//map. Logs the names of all products.
+//map. Logs the names of all products
 const allProductNames = products.map((product) => product.name);
 console.log("all product names:", allProductNames);
 
@@ -39,7 +39,10 @@ console.log(`this is the value of the products`, totalValue);
 
 //Case 2
 
-
-
+//Filters out from the 'clothing' category, then specifies that it should print the names of the items
+const clothingsNames = products
+  .filter((product) => product.category === "clothing")
+  .map((product) => product.name);
+console.table("clothing:", clothingsNames);
 
 
