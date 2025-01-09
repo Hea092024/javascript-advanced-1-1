@@ -8,23 +8,23 @@ const products = [
   { name: "Sneakers", price: 300, category: "clothing" },
 ];
 
-const totalValue = products.reduce((sum,products) => sum + products.price, 0);
-console.log(`this is the value of the products`, totalValue);
+// const totalValue = products.reduce((sum,products) => sum + products.price, 0);
+// console.log(`this is the value of the products`, totalValue);
 
-const cheapProducts = products.filter((product) => product.price < 200);
-console.table(cheapProducts);
+// const cheapProducts = products.filter((product) => product.price < 200);
+// console.table(cheapProducts);
 
-const allProductNames = products.map((product) => product.name);
-console.log("all product names:", allProductNames);
+// const allProductNames = products.map((product) => product.name);
+// console.log("all product names:", allProductNames);
 
-const clothingNames = products
-  .filter((product) => product.category === "clothing")
+const electronicsNames = products
+  .filter((product) => product.category === "electronics")
   .map((product) => product.name);
-console.log("clothing names:", clothingNames);
+console.table("electronics:", electronicsNames);
 
-const hasExpensiveItems = products.some((product) => product.price > 1000);
-console.log(
-  hasExpensiveItems
-    ? "there are expensive items available"
-    : "there are no expensive items available."
-);
+// const hasExpensiveItems = products.some((product) => product.price > 1000);
+// console.log(
+//   hasExpensiveItems
+//     ? "there are expensive items available"
+//     : "there are no expensive items available."
+// );
