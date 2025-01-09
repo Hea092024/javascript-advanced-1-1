@@ -37,8 +37,7 @@ console.log(
 const totalValue = products.reduce((sum,products) => sum + products.price, 0);
 console.log(`this is the value of the products`, totalValue);
 
-
-
+//Case 2
 
 
 
